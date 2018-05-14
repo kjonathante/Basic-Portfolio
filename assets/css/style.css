@@ -7,6 +7,7 @@
 }
 
 
+/* 1. Colors */
 
 /* 
   * Teal color (used for headings and backgrounds): `#4aaaa5`
@@ -19,7 +20,7 @@ h1 {
   and all text besides the headings): `#777777`
 */
 p, a {
-  color:  #777;
+  color:  #aaa;
 }
 /* 
   * Main header background color: `#ffffff`
@@ -39,10 +40,13 @@ footer {
   * Main content background color: `#ffffff`
   * Main content border color: `#dddddd`
 */
-section {
+main {
   background-color: #fff;
   border-color: #ddd;
 }
+
+/* 2. Fonts */
+
 /* 
   * For heading fonts use `font-family: 'Georgia', Times, Times New Roman, serif;`.
 */
@@ -54,19 +58,29 @@ h1 {
 */
 body {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  /* */
+}
+
+/* Background Image */
+
+body {
   background-image: url("../images/creampaper/creampaper.png");
 }
 
+/* Dimensions */
+
 .container {
-  /*background-color: grey;*/
-  margin: 0 auto;
   width: 960px;
 }
 
+/* Start of Customization */
+
+.container {
+  margin: 0 auto;
+}
+
 header {
-  border-bottom-width: 2px;
   border-bottom-style: solid;
+  border-bottom-width: 3px;
 }
 
 .logo {
@@ -74,8 +88,8 @@ header {
   color: #fff;
   display: inline-block;
   font-size: 24px;
-  line-height: 36px;
   font-weight: 700;
+  line-height: 30px;
   padding: 24px;
 }
 
@@ -93,33 +107,35 @@ a {
 }
 
 .main {
-  margin: 50px auto 100px auto;
   border-style: solid;
   border-width: 1px;
+  margin: 30px auto 100px auto;
   padding: 25px;
 }
 
-/* .mainheading { */
 .main h1 {
   /* background: grey; */
+  border-bottom: 3px solid #ccc; 
   font-size: 24px;
   font-weight: 800;
+  margin-bottom: 20px;
   padding-top: 12px;
   padding-bottom: 37px;
-  border-bottom: 3px solid #ccc; 
-  margin-bottom: 20px;
 }
 
 footer {
   border-top: 8px solid #4aaaa5;
-  line-height: 40px;
-  text-align: center;
+  
   font-size: 10px;
+  /* line-height: 14px; */
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
 
-  position: fixed;
 
-  left: 0;
   bottom: 0;
+  left: 0;
+  position: fixed;
   width: 100%;
 }
 
