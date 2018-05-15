@@ -50,7 +50,7 @@ main {
 /* 
   * For heading fonts use `font-family: 'Georgia', Times, Times New Roman, serif;`.
 */
-h1 {
+h1, h6 {
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
 /* 
@@ -155,3 +155,42 @@ footer {
 }
 
 
+/* portfolio */
+
+.placeholder {
+  width: 33.33%;
+  height: 350px;
+  background-color: grey;
+  padding: 10px;
+  /* margin: 10px; */
+  float: left;
+}
+
+.portfolio::after {
+  content: "";
+  clear: both;
+  display: block; 
+}
+
+.image-container {
+  background-color: red;
+  margin: auto;
+  position: relative;
+  width: 250px;
+  height: 300px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.text-block {
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+  background-color: #4aaaa5;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
