@@ -95,16 +95,33 @@ header {
 
 nav {
   float: right;
-  margin-right: 10px;
-  padding: 12px 0;
+  /* margin-right: 10px; */
+  padding: 31px 0;
 }
 
 a {
-  line-height: 24px;
+  /* line-height: 24px; */
   /*background-color: lightgray;*/
-  padding: 0 5px;  
+  /* padding: 0 5px;   */
   text-decoration: none;
 }
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  border-right: 1px solid #666;
+  padding: 0 20px;
+  /* background-color: green; */
+}
+.nav li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
 
 .main {
   border-style: solid;
