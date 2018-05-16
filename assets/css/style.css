@@ -19,7 +19,7 @@ h1 {
   * Regular font color (used for paragraphs 
   and all text besides the headings): `#777777`
 */
-p, a {
+p, a, label {
   color:  #aaa;
 }
 /* 
@@ -193,4 +193,41 @@ footer {
   padding: 20px;
   width: 100%;
   text-align: center;
+}
+
+/* contact */
+.form-el {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+}
+input {
+  margin-bottom: 15px;
+}
+textarea {
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #4aaaa5;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 8px 30px;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  font-size: 18px;
+  padding: 5px;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  font-size: 18px;
+  padding: 5px;
+  resize: none;
 }
