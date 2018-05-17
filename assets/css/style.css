@@ -157,6 +157,8 @@ footer {
 }
 
 /* page specific */
+
+/* about me */
 .aboutme img {
   float: left;
   margin-right: 15px;
@@ -176,9 +178,9 @@ footer {
 
 .placeholder {
   width: 33.33%;
-  height: 350px;
-  background-color: grey;
-  padding: 10px;
+  /* height: 350px; */
+  /* background-color: grey; */
+  padding: 20px 0;
   /* margin: 10px; */
   float: left;
 }
@@ -190,7 +192,7 @@ footer {
 }
 
 .image-container {
-  background-color: red;
+  /* background-color: red; */
   margin: auto;
   position: relative;
   width: 250px;
