@@ -19,8 +19,8 @@ h1 {
   * Regular font color (used for paragraphs 
   and all text besides the headings): `#777777`
 */
-p, a, label {
-  color:  #aaa;
+p, a, label, input[type=text], textarea, button {
+  color:  #777777;
 }
 /* 
   * Main header background color: `#ffffff`
@@ -48,16 +48,16 @@ main {
 /* 2. Fonts */
 
 /* 
+  * For all other fonts use `'Arial', 'Helvetica Neue', Helvetica, sans-serif;`.
+*/
+html, input, textarea, button {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+/* 
   * For heading fonts use `font-family: 'Georgia', Times, Times New Roman, serif;`.
 */
 h1, h6 {
-  font-family: 'Georgia', Times, Times New Roman, serif;
-}
-/* 
-  * For all other fonts use `'Arial', 'Helvetica Neue', Helvetica, sans-serif;`.
-*/
-body {
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Background Image */
@@ -212,20 +212,17 @@ footer {
   text-align: center;
 }
 
-/* contact */
-.form-el {
-  display: block;
-  width: 100%;
-}
 
-label {
-  margin-bottom: 5px;
-}
-input {
-  margin-bottom: 15px;
-}
+/* contact */
+
+input[type=text],
 textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
   margin-bottom: 15px;
+  border: 1px solid #ccc;
+  font-size: 18px;
 }
 
 button {
@@ -234,17 +231,14 @@ button {
   font-size: 18px;
   line-height: 24px;
   padding: 8px 30px;
-}
-
-input[type="text"] {
-  border: 1px solid #ccc;
-  font-size: 18px;
-  padding: 5px;
+  cursor: pointer;
 }
 
 textarea {
-  border: 1px solid #ccc;
-  font-size: 18px;
-  padding: 5px;
   resize: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa;
+  opacity: .8; /* Firefox */
 }
